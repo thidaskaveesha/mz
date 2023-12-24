@@ -1,0 +1,65 @@
+:root {
+    /* Colors */
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: var(--blue);
+    --secondary: var(--gray);
+    --success: var(--green);
+    --info: var(--cyan);
+    --warning: var(--yellow);
+    --danger: var(--red);
+    --light: var(--gray-light);
+    --dark: var(--gray-dark);
+
+    /* Spacing */
+    --spacer: 1rem;
+    --spacer-half: 0.5rem;
+    --spacer-quarter: 0.25rem;
+    --spacer-two-and-half: 2.5rem;
+
+    /* Font sizes */
+    --font-size-base: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-sm: 0.875rem;
+    --font-size-xs: 0.75rem;
+
+    /* Font weights */
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    /* Line heights */
+    --line-height-base: 1.5;
+    --line-height-lg: 1.75;
+    --line-height-sm: 1.25;
+
+    /* Border radius */
+    --border-radius: 0.25rem;
+    --border-radius-lg: 0.3rem;
+    --border-radius-sm: 0.2rem;
+
+    /* Z-index */
+    --zindex-dropdown: 1000;
+    --zindex-sticky: 1020;
+    --zindex-fixed: 1030;
+    --zindex-modal-backdrop: 1040;
+    --zindex-modal: 1050;
+    --zindex-popover: 1060;
+    --zindex-tooltip: 1070;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
