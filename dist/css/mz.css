@@ -1,4 +1,9 @@
 :root {
+    /* Font families */
+    --font-family-primary: 'Helvetica Neue', Arial, sans-serif;
+    --font-family-secondary: 'Times New Roman', serif;
+    --font-family-code: 'Courier New', monospace;
+
     /* Colors */
     --blue: #007bff;
     --indigo: #6610f2;
@@ -64,17 +69,49 @@
     padding: 0;
 }
 
-.btn {
-    border-radius: 2px;
-    padding: 5px 15px;
-    border: none;
+code {
+    font-family: var(--font-family-code);
+}
+/* Arcoddion Seperate */ 
+/* Style for accordion container */
+.accordion-separate {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
 }
 
-.btn:hover {
-    background-color: rgb(255, 222, 124);
+/* Style for accordion heading */
+.accordion-heading {
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
 }
 
-.btn-primary {
-    background-color: var(--yellow);
-    color: var(--white);
+/* Style for arrow icon */
+.accordion-heading::after {
+    content: '\25BC';
+    /* Unicode for down arrow */
+    font-size: 20px;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Style for arrow icon when accordion is open */
+.accordion-separate.active .accordion-heading::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Style for accordion content */
+.accordion-content {
+    display: none;
+    padding: 10px;
+}
+
+/* Style for active (open) accordion */
+.accordion-separate.active .accordion-content {
+    display: block;
 }
