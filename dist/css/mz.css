@@ -69,9 +69,56 @@
     padding: 0;
 }
 
+.outline-primary {
+    border: 1px solid var(--primary);
+}
+
+.outline-secondary {
+    border: 1px solid var(--secondary);
+}
+
+.outline-warning {
+    border: 1px solid var(--warning);
+}
+
+.outline-danger {
+    border: 1px solid var(--danger);
+}
+
+.outline-success {
+    border: 1px solid var(--success);
+}
+
+.outline-info {
+    border: 1px solid var(--info);
+}
+
+.outline-light {
+    border: 1px solid var(--light);
+}
+
+.outline-dark {
+    border: 1px solid var(--dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: sans-serif;
+}
+
+p {
+    font-family: 'Geneva', sans-serif;
+}
+
 code {
     font-family: var(--font-family-code);
+    color: #dc3545;
 }
+
 /* Arcoddion Seperate */ 
 /* Style for accordion container */
 .accordion-separate {
@@ -117,11 +164,6 @@ code {
 }
 
 /* badge styles  */
-
-.bg{
-    margin: 10px;
-}
-
 /* main types */
 
 .badge-primary {
