@@ -69,31 +69,38 @@
     padding: 0;
 }
 
-.bg-primary{
+.bg-primary {
     background-color: var(--primary);
 }
-.bg-secondary{
+
+.bg-secondary {
     background-color: var(--secondary);
 }
-.bg-success{
+
+.bg-success {
     background-color: var(--success);
 }
-.bg-info{
+
+.bg-info {
     background-color: var(--info);
 }
-.bg-warning{
+
+.bg-warning {
     background-color: var(--warning);
 }
-.bg-light{
+
+.bg-light {
     background-color: var(--light);
     color: #333;
 }
-.bg-dark{
-    background-color:var(--dark);
+
+.bg-dark {
+    background-color: var(--dark);
     color: white;
 }
-.bg-danger{
-    background-color:var(--danger);
+
+.bg-danger {
+    background-color: var(--danger);
 }
 
 .outline-primary {
@@ -147,7 +154,7 @@ code {
     color: #dc3545;
 }
 
-/* Arcoddion Seperate */ 
+/* Arcoddion Seperate */
 /* Style for accordion container */
 .accordion-separate {
     border: 1px solid #ccc;
@@ -156,7 +163,6 @@ code {
 
 /* Style for accordion heading */
 .accordion-heading {
-    background-color: #f1f1f1;
     padding: 10px;
     cursor: pointer;
     position: relative;
@@ -194,60 +200,61 @@ code {
 /* badge styles  */
 /* main types */
 
-.badge{
-    
+.badge {
     font-size: medium;
     border-radius: 10%;
     border-width: 1px;
     border: 1px solid black;
-    padding:5%;
+    padding: 5%;
     margin: 2%;
 }
 
 
 /*  buttons badge */
-.bg-bt{
+.bg-bt {
     margin: 10px;
     width: 150px;
-    height:50px;
+    height: 50px;
     background-color: #007bff;
     border: none;
     color: white;
     border-radius: 10px;
-  
+
 }
-.badge-bt{
+
+.badge-bt {
     color: white;
-    padding:5%;
+    padding: 5%;
     border-radius: 30%;
 }
 
 
 
 /*  positon badge */
-
-.positioned-bg{
+.positioned-bg {
     margin: 10px;
-    width:80px;
+    width: 80px;
     height: 50px;
     background-color: #007bff;
     border: none;
     border-radius: 10%;
 }
-.badge-pstn-pill{
+
+.badge-pstn-pill {
     background-color: var(--danger);
     position: absolute;
-    border-radius:25%;
-    padding:3px 5px 3px 5px;
+    border-radius: 25%;
+    padding: 3px 5px 3px 5px;
     color: white;
     margin-top: -25px;
 }
-.badge-pstn-rounded{
+
+.badge-pstn-rounded {
     background-color: var(--danger);
     position: absolute;
-    width:20px;
+    width: 20px;
     height: 20px;
-    border-radius:100%;
+    border-radius: 100%;
     padding: 5px;
     align-items: center;
     color: white;
