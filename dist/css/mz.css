@@ -522,3 +522,72 @@ code {
     font-size: 18px;
     font-weight: bold;
 }
+
+/* Toast changes */
+.toast,
+.toast-tr,
+.toast-tl,
+.toast-br,
+.toast-bl {
+    width: 300px;
+    height: 100px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.3s ease-in-out;
+    z-index: 5;
+    justify-content: start;
+    overflow: hidden;
+}
+
+.toastHeader {
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1.7px solid #707070;
+    width: 100%;
+}
+
+.toastBody {
+    width: 100%;
+    padding: 5px;
+}
+
+.toast-tr {
+    position: fixed;
+    top: 6px;
+    right: 5px;
+}
+
+.toast-tl {
+    position: fixed;
+    top: 6px;
+    left: 5px;
+}
+
+.toast-br {
+    position: fixed;
+    bottom: 6px;
+    right: 5px;
+}
+
+.toast-bl {
+    position: fixed;
+    bottom: 6px;
+    left: 5px;
+}
+
+/* tooltips */
+.custom-tooltip {
+    position: fixed;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    display: none;
+    z-index: 999;
+}
