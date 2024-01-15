@@ -509,3 +509,16 @@ code {
     color:#0000FF;
 }
 
+/* Style for alert */
+.alert {
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+/* Close icon style */
+.alert .close-icon::after {
+    content: '×'; 
+    font-size: 18px;
+    font-weight: bold;
+}
