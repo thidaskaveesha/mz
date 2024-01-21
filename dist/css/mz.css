@@ -649,5 +649,83 @@ code {
   , .breadcrumbs-divider-vline li:last-child::after , .breadcrumbs-divider-star li:last-child::after  {
     content: '';
   }
+
+
+/* offcanvas */
+
+.offcanvas-h {
+    height: 100%;
+    width: 300px;
+    z-index: 1;
+    border-color: #333;
+    border-width: 2px;
+    position: fixed;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5); /* Add box shadow for smooth movement */
+    
+  }
+
+/* off canvs left */
+.offcanvas-leaft{
+    margin-top: -920px;/* Adjust this value based on your layout */
+    overflow-x: hidden;
+    width:0px;
+    transition: 0.3s;
+}
+.offcanvas-active-leaft{
+    margin-top: -920px;/* Adjust this value based on your layout */
+    margin-left: 0px;
+    transition: 0.3s;
+}
+/* offcanvas right */
+.offcanvas-right {
+    overflow-x: hidden;
+    width:0px;
+    margin-left: 1300px;
+    margin-top: -920px; /* Adjust this value based on your layout */
+    transition: 0.3s;
+}
+
+.offcanvas-active-right {
+    margin-left: 1020px;
+    margin-top: -920px; /* Adjust this value based on your layout */
+    transition: 0.3s;
+  
+}
+
+/* offcanvs top */
+
+.offcanvas-v{
+    height: 200px;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5); 
+    transition: 0.3s;
+}
+.offcanvas-top{
+    margin-top: -920px;/* Adjust this value based on your layout */
+    height: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.offcanvas-active-top{
+    height: 200px;
+    margin-top: -920px;/* Adjust this value based on your layout */
+    transition: 0.3s;
+}
+
+/* bottom offcanvas */
+.offcanvas-bottom{
+    height: 0px;
+    overflow-y: hidden;
+    bottom : 0;
+}
+.offcanvas-active-bottom{
+    height: 200px;
+    transition: 0.3s;
+    bottom:0px;
+}
+
+
  
 
