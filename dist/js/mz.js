@@ -102,3 +102,51 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+//offcanvas handler
+var elementid;
+var className;
+var activeclasss;
+
+
+function status(event){
+    var clickedButton =event.target;
+    var buttonID = clickedButton.id;
+     if (buttonID=="left"){
+        className="offcanvas-leaft";
+        activeclasss="offcanvas-active-leaft";
+        elementid="offcanvasid-left";
+    }
+    else if (buttonID=="right"){
+        className="offcanvas-right"; 
+        activeclasss="offcanvas-active-right";
+        elementid="offcanvasid-right";
+    }
+    else if (buttonID=="top"){
+        console.log(buttonID)
+        className="offcanvas-top";
+        activeclasss="offcanvas-active-top";
+        elementid="offcanvasid-top";
+    }
+    else if (buttonID=="bottom"){
+        console.log(buttonID)
+        className="offcanvas-bottom"; 
+        activeclasss="offcanvas-active-bottom";
+        elementid="offcanvasid-bottom";
+    }
+    var elemtnt=document.getElementById(elementid);
+    toggleItems(className,activeclasss,elemtnt);
+}
+
+function toggleItems(className,activeclasss,elemtnt){
+    elemtnt.classList.remove(className);
+    elemtnt.classList.add(activeclasss);
+}
+function remActive(){
+    var elemtnt=document.getElementById(elementid);
+    elemtnt.classList.remove(activeclasss);
+    elemtnt.classList.add(className);
+}
+
+
+
