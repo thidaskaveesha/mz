@@ -249,6 +249,38 @@
     <li ><a href="#">Current Page</a></li>
   </ul>
 
+    <!-- offcanvas -->
+
+    <h1>offcanvas</h1>
+    <div style="justify-content: space-around; margin: 10px;">
+      
+        <button style="background-color: green;border-radius: 5px;padding: 5px;border: none;cursor: pointer;" type="button" onclick="status(event)" id="left"> leaft-side offcanvas</button>
+        <button style="background-color: green;border-radius: 5px;padding: 5px;border: none;cursor: pointer;" type="button" onclick="status(event)" id="right"> right-side offcanvas</button>
+        <button style="background-color: green;border-radius: 5px;padding: 5px;border: none;cursor: pointer;" type="button" onclick="status(event)"id="top"> top-side offcanvas</button>
+        <button style="background-color: green;border-radius: 5px;padding: 5px;border: none;cursor: pointer;" type="button" onclick="status(event)"id="bottom"> bottom-side offcanvas</button>
+    </div>
+    <!-- left off canvas -->
+    <div class="offcanvas-h offcanvas-leaft bg-dark " id="offcanvasid-left">
+        your items
+        <button onclick="remActive()">cancel</button>
+    </div>
+    <!-- right offcasnvas -->
+    <div class="offcanvas-h offcanvas-right bg-dark " id="offcanvasid-right">
+        your items
+        <button onclick="remActive()">cancel</button>
+    </div>
+    <!-- offcanvs top -->
+    <div class="offcanvas-v offcanvas-top bg-primary outline-danger " id="offcanvasid-top">
+        your items
+        <button onclick="remActive()">cancel</button>
+    </div>
+    <!-- offcanvs bottom -->
+    <div class="offcanvas-v offcanvas-bottom bg-primary" id="offcanvasid-bottom">
+        your items
+        <button onclick="remActive()">cancel</button>
+    </div>
+
+
     
     <script src="dist/js/mz.js"></script>
 </body>
